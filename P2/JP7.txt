@@ -1,0 +1,70 @@
+=============================================
+=   Sistema de recomendacion de viviendas   =
+=============================================
+- Quiere ejecutar un juego de pruebas? [s | n] n
+Por favor, responda a las siguientes preguntas:
+- Que edad tiene? 21
+- Cual es su estado civil? [(p)areja | (s)oltero | (d)ivorciado | con (h)ijos] s
+- Esta a cargo de personas mayores? [s | n] n
+- Tiene coche? [s | n] s
+- Trabaja en la ciudad de Barcelona? [s | n] n
+A continuacion se le haran preguntas sobre las diferentes caracteristicas de las viviendas
+Para cada caracteristica, se le preguntara tambien su grado de obligatoriedad, los cuales pueden ser:
+[(o)bligatorio | (p)referente | (i)ndiferente]
+- Que tipo de vivienda esta buscando? [(u)nifamiliar | (p)iso | (d)uplex] u
+- Cual es su grado de obligatoriedad? o
+- Cual es el precio mensual minimo que esta dispuesto/a a pagar? 500
+- Cual es su grado de obligatoriedad? o
+- Cual es el precio mensual maximo que esta dispuesto/a a pagar? 700
+- Cual es su grado de obligatoriedad? o
+- Cuantos metros cuadrados quiere que tenga aproximadamente como minimo? 100
+- Cual es su grado de obligatoriedad? o
+- Cuantos dormitorios simples quiere como minimo? 2
+- Cual es su grado de obligatoriedad? o
+- De estos dormitorios, cuantos quiere con armarios empotrados como minimo? 2
+- Cual es su grado de obligatoriedad? p
+- Cuantos dormitorios dobles quiere como minimo? 2
+- Cual es su grado de obligatoriedad? o
+- De estos dormitorios, cuantos quiere con armarios empotrados como minimo? 2
+- Cual es su grado de obligatoriedad? p
+- Cuantos banyos quiere como minimo? 2
+- Cual es su grado de obligatoriedad? o
+- De estos banyos, cuantos quiere con banyera como minimo? 1
+- Cual es su grado de obligatoriedad? p
+- De estos banyos, cuantos quiere con ducha como minimo? 1
+- Cual es su grado de obligatoriedad? p
+- Quiere una vivienda con balcones? [s | n] t
+- Quiere una vivienda con balcones? [s | n] s
+- Cual es su grado de obligatoriedad? i
+- Quiere una vivienda con terrazas? [s | n] s
+- Cual es su grado de obligatoriedad? o
+- Quiere una vivienda unifamiliar con garaje? [s | n] s
+- Cual es su grado de obligatoriedad? o
+- Quiere una vivienda unifamiliar con sotano? [s | n] n
+- Cual es su grado de obligatoriedad? o
+- Quiere una vivienda con ascensor? [s | n] n
+- Cual es su grado de obligatoriedad? p
+- Quiere una vivienda donde se permitan mascotas? [s | n] s
+- Cual es su grado de obligatoriedad? p
+- Quiere una vivienda con gas natural o butano? [(n)atural | (b)utano] n
+- Cual es su grado de obligatoriedad? o
+- Quiere una vivienda que disponga de aire acondicionado? [s | n] s
+- Cual es su grado de obligatoriedad? p
+- Quiere una vivienda que disponga de calefaccion? [s | n] s
+- Cual es su grado de obligatoriedad? i
+- Quiere una vivienda amueblada? [s | n] n
+- Cual es su grado de obligatoriedad? p
+- Quiere una vivienda con electrodomesticos? [s | n] s
+- Cual es su grado de obligatoriedad? p
+- Quiere una vivienda con piscina? [s | n] s
+- Cual es su grado de obligatoriedad? p
+- Quiere una vivienda soleada por la manyana, por la tarde, o todo el dia? [(m)anyana | (t)arde | (d)ia] d
+- Cual es su grado de obligatoriedad? p
+- Quiere una vivienda con buenas vistas? [s | n] s
+- Cual es su grado de obligatoriedad? p
+Los servicios que hay disponibles son: (i)ndustrial (o)cio o(f)icina (e)ducacion (z)onaverde (s)anidad (t)ransporte (c)omercial
+- Que servicios prefiere tener cerca? o f t z c
+- Cual es su grado de obligatoriedad? i
+- Que servicios prefiere tener lejos? i
+- Cual es su grado de obligatoriedad? o
+No se han encontrado viviendas que cumplan los criterios especificados

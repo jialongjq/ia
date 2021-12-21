@@ -1,0 +1,115 @@
+=============================================
+=   Sistema de recomendacion de viviendas   =
+=============================================
+- Quiere ejecutar un juego de pruebas? [s | n] n
+Por favor, responda a las siguientes preguntas:
+- Que edad tiene? 21
+- Cual es su estado civil? [(p)areja | (s)oltero | (d)ivorciado | con (h)ijos] S
+- Esta a cargo de personas mayores? [s | n] S
+- Tiene coche? [s | n] S
+- Trabaja en la ciudad de Barcelona? [s | n] S
+Ha indicado que trabaja en Barcelona.
+Sabiendo que los distritos en Barcelona son:
+[a] Ciutat Vella   [b] Eixample        [c] Sants-Montjuic   [d] Les Corts    [e] Sarria-Sant Gervasi
+[f] Gracia         [g] Horta-Guinardo  [h] Nou Barris        [i] Sant Andreu  [j] Sant Marti
+- En que distrito trabaja? F
+A continuacion se le haran preguntas sobre las diferentes caracteristicas de las viviendas
+Para cada caracteristica, se le preguntara tambien su grado de obligatoriedad, los cuales pueden ser:
+[(o)bligatorio | (p)referente | (i)ndiferente]
+- Que tipo de vivienda esta buscando? [(u)nifamiliar | (p)iso | (d)uplex] u
+- Cual es su grado de obligatoriedad? i
+- Cual es el precio mensual minimo que esta dispuesto/a a pagar? 0
+- Cual es su grado de obligatoriedad? i
+- Cual es el precio mensual maximo que esta dispuesto/a a pagar? 0
+- Cual es su grado de obligatoriedad? i
+- Cuantos metros cuadrados quiere que tenga aproximadamente como minimo? 0
+- Cual es su grado de obligatoriedad? i
+- Cuantos dormitorios simples quiere como minimo? 0
+- Cual es su grado de obligatoriedad? i
+- Cuantos dormitorios dobles quiere como minimo? 0
+- Cual es su grado de obligatoriedad? i
+- Cuantos banyos quiere como minimo? 0
+- Cual es su grado de obligatoriedad? i
+- Quiere una vivienda con balcones? [s | n] n
+- Cual es su grado de obligatoriedad? i
+- Quiere una vivienda con terrazas? [s | n] n
+- Cual es su grado de obligatoriedad? i
+- Quiere una vivienda unifamiliar con garaje? [s | n] n
+- Cual es su grado de obligatoriedad? i
+- Quiere una vivienda unifamiliar con sotano? [s | n] n
+- Cual es su grado de obligatoriedad? i
+- Quiere una vivienda con ascensor? [s | n] n
+- Cual es su grado de obligatoriedad? i
+- Quiere una vivienda donde se permitan mascotas? [s | n] n
+- Cual es su grado de obligatoriedad? i
+- Quiere una vivienda con gas natural o butano? [(n)atural | (b)utano] n
+- Cual es su grado de obligatoriedad? i
+- Quiere una vivienda que disponga de aire acondicionado? [s | n] n
+- Cual es su grado de obligatoriedad? i
+- Quiere una vivienda que disponga de calefaccion? [s | n] n
+- Cual es su grado de obligatoriedad? i
+- Quiere una vivienda amueblada? [s | n] n
+- Cual es su grado de obligatoriedad? i
+- Quiere una vivienda con electrodomesticos? [s | n] n
+- Cual es su grado de obligatoriedad? i
+- Quiere una vivienda con piscina? [s | n] n
+- Cual es su grado de obligatoriedad? i
+- Quiere una vivienda soleada por la manyana, por la tarde, o todo el dia? [(m)anyana | (t)arde | (d)ia] d
+- Cual es su grado de obligatoriedad? i
+- Quiere una vivienda con buenas vistas? [s | n] n
+- Cual es su grado de obligatoriedad? i
+Los servicios que hay disponibles son: (i)ndustrial (o)cio o(f)icina (e)ducacion (z)onaverde (s)anidad (t)ransporte (c)omercial
+- Que servicios prefiere tener cerca? 
+- Cual es su grado de obligatoriedad? i
+- Que servicios prefiere tener lejos? 
+- Cual es su grado de obligatoriedad? i
+
+=============================================
+=            VIVIENDAS ADECUADAS            =
+=============================================
+[ViviendaG-7]
+Lista de servicios cercanos: 
+- [ServicioGracia9] (Ocio)
+- [ServicioGracia7] (Oficina)
+- [ServicioGracia8] (Oficina)
+- [ServicioGracia11] (Sanidad)
+- [ServicioGracia10] (Industrial)
+Puntuacion: 7
+[+5 puntos] La vivienda esta en el mismo distrito donde trabaja
+[+1 punto] Esta a cargo de mayores y la vivienda tiene servicios de sanidad cerca
+[+1 punto] Es soltero y la vivienda tiene servicios de ocio cerca
+
+[ViviendaG-1]
+Lista de servicios cercanos: 
+- [ServicioGracia5] (Comercial)
+- [ServicioGracia2] (Educacion)
+- [ServicioGracia1] (Ocio)
+Puntuacion: 6
+[+5 puntos] La vivienda esta en el mismo distrito donde trabaja
+[+1 punto] Es soltero y la vivienda tiene servicios de ocio cerca
+
+[ViviendaG-6]
+Lista de servicios cercanos: 
+- [ServicioGracia5] (Comercial)
+- [ServicioGracia9] (Ocio)
+- [ServicioGracia7] (Oficina)
+- [ServicioGracia8] (Oficina)
+- [ServicioGracia6] (Transporte)
+Puntuacion: 6
+[+5 puntos] La vivienda esta en el mismo distrito donde trabaja
+[+1 punto] Es soltero y la vivienda tiene servicios de ocio cerca
+
+[ViviendaG-4]
+Lista de servicios cercanos: 
+- [ServicioGracia5] (Comercial)
+- [ServicioGracia7] (Oficina)
+- [ServicioGracia6] (Transporte)
+Puntuacion: 5
+[+5 puntos] La vivienda esta en el mismo distrito donde trabaja
+
+[ViviendaG-5]
+Lista de servicios cercanos: 
+- [ServicioGracia5] (Comercial)
+- [ServicioGracia7] (Oficina)
+Puntuacion: 5
+[+5 puntos] La vivienda esta en el mismo distrito donde trabaja

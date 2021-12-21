@@ -1,0 +1,16 @@
+CLIPS 6.40 (20/12/2021, https://sourceforge.net/projects/clipsrules/files/)
+
+Para ejecutar el programa con CLIPSIDE:
+- Seleccionar el directorio donde se encuentran los ficheros .clp como el directorio de trabajo de CLIPSIDE.
+- Para empezar una ejecucion desde cero:
+	(clear)
+	(load ontologia.clp)
+	(load instancias.clp)
+	(load implementacion.clp)
+	(reset)
+	(run)
+- Para volver a empezar una ejecucion con los ficheros .clp ya cargados:
+	(reset)
+	(run)
+
+Los ficheros JPX.txt corresponden a los juegos de prueba descritos en la documentacion.

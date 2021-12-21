@@ -1,0 +1,2198 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#"
+     xml:base="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:viviendas="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#tiene_dormitorio -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#tiene_dormitorio">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Dormitorio"/>
+        <rdfs:comment>vivienda tiene dormitorios</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#obtiene_recomendaciones -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#obtiene_recomendaciones">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Cliente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Recomendacion"/>
+        <rdfs:comment>el cliente obtiene recomendaciones</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#solicita_peticion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#solicita_peticion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Cliente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:comment>cliente solicita peticiones</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#tiene_banyos -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#tiene_banyos">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo"/>
+        <rdfs:comment>vivienda tiene banyos</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#altura -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#altura">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Duplex"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Piso"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>altura del piso</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#direccion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#direccion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Localizacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>dirección de la localización</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#distrito_ciudad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#distrito_ciudad">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Localizacion"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>CIUTAT-VELLA</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>EIXAMPLE</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>GRACIA</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>HORTA-GUINARDO</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>LES-CORTS</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>NOU-BARRIS</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first>SANT-ANDREU</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first>SANT-MARTI</rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first>SANTS-MONTJUIC</rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                <rdf:first>SARRIA-SANT-GERVASI</rdf:first>
+                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>el distrito de la ciudad donde se encuentra la localizacion</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#has_aire -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#has_aire">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>indica si la vivienda tiene aire acondicionado</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#has_balcon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#has_balcon">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>indica si la vivienda tiene balcon</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#has_calefaccion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#has_calefaccion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>indica si la vivienda tiene calefaccion</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#has_terraza -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#has_terraza">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>indica si la vivienda tiene terraza</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#m2_habitable -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#m2_habitable">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>metros cuadrados habitables de la vivienda</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#armario_empotrado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#armario_empotrado">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Dormitorio"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>indica si el dormitortio tiene un armario empotrado</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#electrodomesticos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#electrodomesticos">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>indica si la vivienda tiene electrodomesticos instalados</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#gas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#gas">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>BUTANO</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>NATURAL</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>indica si el gas de la vivienda es butano o natural</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#has_ascensor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#has_ascensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>indica si la vivienda tiene ascendsor</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#has_banyo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#has_banyo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>indica si el banyo tiene banyera</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#has_ducha -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#has_ducha">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>indica si la vivienda tiene ducha</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#has_garaje -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#has_garaje">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Unifamiliar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>indica si, en caso de que la vivienda sea unifamiliar, si tiene garaje</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#has_parking -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#has_parking">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Duplex"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Piso"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>indica si, en caso de que la vivienda sea duplex o piso, tiene un parking</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#has_piscina -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#has_piscina">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>indica si la vivienda tiene piscina</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#has_sotano -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#has_sotano">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Unifamiliar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>indica, en el caso de una vivienda unifamiliar, si tiene sotano</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#has_vistas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#has_vistas">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>indica si la vivienda tiene vistas</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#latitud_y -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#latitud_y">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Localizacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>coordenada y de la localizacion</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#longitud_x -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#longitud_x">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Localizacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>coordenada x de la localizacion</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#mascotas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#mascotas">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>indica si la vivienda permite o no tener mascotas</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#max_precio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#max_precio">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>precio maximo dispuesto a pagar por una vivienda</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#min_precio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#min_precio">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>precio minimo dispuesto a pagar por una vivienda</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#muebles -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#muebles">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>indica si la vivienda est amueblada</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#num_banyeras -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#num_banyeras">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>indica el numero de banyeras que tiene el banyo</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#num_dormD -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#num_dormD">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>indica el numero de dormitorios dobles que tiene la vivienda</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#num_dormS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#num_dormS">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>indica el numero de dormitorios simples de la vivienda</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#num_duchas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#num_duchas">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>indica el numero de duchas que tiene el banyo</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#precio_mensual -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#precio_mensual">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>precio mensual de la vivienda</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#soleado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#soleado">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>DIA</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>MANYANA</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>TARDE</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>indica el momento que la vivienda esta soleado</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Comercial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Comercial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Servicio"/>
+        <rdfs:comment>Servicio comercial</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Doble -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Doble">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Dormitorio"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Simple"/>
+        <rdfs:comment>Clase que representa un dormitorio doble</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Educacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Educacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Servicio"/>
+        <rdfs:comment>Servicio area de la educacion</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Ocio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Ocio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Servicio"/>
+        <rdfs:comment>Servicio area del ocio</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Oficina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Oficina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Servicio"/>
+        <rdfs:comment>Servicio area de oficina</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Sanidad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Sanidad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Servicio"/>
+        <rdfs:comment>Servicio area sanitaria</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Simple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Simple">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Dormitorio"/>
+        <rdfs:comment>Clase que representa un dormitorio simple</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Transporte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Transporte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Servicio"/>
+        <rdfs:comment>Servicio transporte publico</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Unifamiliar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Unifamiliar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda"/>
+        <rdfs:comment>Vivienda de tipo unifamiliar</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#ZonaVerde -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#ZonaVerde">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Servicio"/>
+        <rdfs:comment>Servicio dde zona verde</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo">
+        <rdfs:comment>Clase que representa un banyo</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Cliente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Cliente">
+        <rdfs:comment>Clase que representa un cliente</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Dormitorio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Dormitorio">
+        <rdfs:comment>Clase que representa un dormitorio</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Duplex -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Duplex">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda"/>
+        <rdfs:comment>Vivienda de tipo duplex</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Indiferente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Indiferente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:comment>Peticiones indiferentes</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Industrial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Industrial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Servicio"/>
+        <rdfs:comment>Servicio area industrial</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Localizacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Localizacion">
+        <rdfs:comment>Clase que representa una localizacion</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion">
+        <rdfs:comment>Clase que representa la peticion</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Piso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Piso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda"/>
+        <rdfs:comment>Vivienda de tipo piso</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Prefererida -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Prefererida">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:comment>Peticion preferente</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Recomendacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Recomendacion">
+        <rdfs:comment>Clase que representa la recomendacion</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Restrictiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Restrictiva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Peticion"/>
+        <rdfs:comment>Peticiones restrictivas</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Servicio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Servicio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Localizacion"/>
+        <rdfs:comment>Clase que representa un servicio</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Localizacion"/>
+        <rdfs:comment>Clase que representa la vivienda</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo"/>
+        <has_banyo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_banyo>
+        <has_ducha rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ducha>
+        <rdfs:comment>Tiene ducha y banyera</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo"/>
+        <tiene_banyos rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo3"/>
+        <has_banyo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_banyo>
+        <has_ducha rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_ducha>
+        <rdfs:comment>Tiene banyera</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo"/>
+        <has_banyo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_banyo>
+        <has_ducha rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ducha>
+        <rdfs:comment>Tiene ducha</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo"/>
+        <has_banyo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_banyo>
+        <has_ducha rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_ducha>
+        <rdfs:comment>No tiene ni ducha ni banyera</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Doble"/>
+        <armario_empotrado rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</armario_empotrado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Doble"/>
+        <armario_empotrado rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</armario_empotrado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Doble"/>
+        <armario_empotrado rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</armario_empotrado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Doble"/>
+        <armario_empotrado rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</armario_empotrado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioSimple1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioSimple1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Simple"/>
+        <armario_empotrado rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</armario_empotrado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioSimple2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioSimple2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Simple"/>
+        <armario_empotrado rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</armario_empotrado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioSimple3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioSimple3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Simple"/>
+        <armario_empotrado rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</armario_empotrado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioSimple4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioSimple4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Simple"/>
+        <armario_empotrado rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</armario_empotrado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda1-SM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda1-SM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Piso"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble1"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioSimple1"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioSimple2"/>
+        <tiene_banyos rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo1"/>
+        <tiene_banyos rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo4"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</viviendas:altura>
+        <viviendas:distrito_ciudad>SANTS-MONTJUIC</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</precio_mensual>
+        <soleado>DIA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda2-SM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda2-SM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Piso"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble4"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioSimple2"/>
+        <tiene_banyos rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo2"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</viviendas:altura>
+        <viviendas:distrito_ciudad>SANTS-MONTJUIC</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5700</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</precio_mensual>
+        <soleado>DIA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda3-SM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda3-SM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Piso"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble2"/>
+        <tiene_banyos rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo2"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</viviendas:altura>
+        <viviendas:distrito_ciudad>SANTS-MONTJUIC</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>BUTANO</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7000</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</precio_mensual>
+        <soleado>MANYANA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda4-SM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Vivienda4-SM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Duplex"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble2"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioSimple1"/>
+        <tiene_banyos rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo3"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</viviendas:altura>
+        <viviendas:distrito_ciudad>SANTS-MONTJUIC</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2500</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</precio_mensual>
+        <soleado>DIA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaE-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaE-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Piso"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioSimple1"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioSimple3"/>
+        <tiene_banyos rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo3"/>
+        <tiene_banyos rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo4"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</viviendas:altura>
+        <viviendas:distrito_ciudad>EIXAMPLE</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</electrodomesticos>
+        <gas>BUTANO</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7100</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11600</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">453</precio_mensual>
+        <soleado>TARDE</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaE-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaE-2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Piso"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble2"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioSimple3"/>
+        <tiene_banyos rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo3"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</viviendas:altura>
+        <viviendas:distrito_ciudad>EIXAMPLE</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7600</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12500</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">657</precio_mensual>
+        <soleado>TARDE</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaE-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaE-3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Duplex"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble2"/>
+        <tiene_banyos rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo2"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</viviendas:altura>
+        <viviendas:distrito_ciudad>EIXAMPLE</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_terraza>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13500</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">345</precio_mensual>
+        <soleado>DIA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaE-4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaE-4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Piso"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble1"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioSimple1"/>
+        <tiene_banyos rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Banyo3"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</viviendas:altura>
+        <viviendas:distrito_ciudad>EIXAMPLE</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13700</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">876</precio_mensual>
+        <soleado>DIA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaE-5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaE-5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Duplex"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</viviendas:altura>
+        <viviendas:distrito_ciudad>EIXAMPLE</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8400</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16600</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">677</precio_mensual>
+        <soleado>MANYANA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaE-6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaE-6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Duplex"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</viviendas:altura>
+        <viviendas:distrito_ciudad>EIXAMPLE</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17000</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">332</precio_mensual>
+        <soleado>TARDE</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaE-7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaE-7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Piso"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</viviendas:altura>
+        <viviendas:distrito_ciudad>EIXAMPLE</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4400</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13000</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">874</precio_mensual>
+        <soleado>DIA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaE-8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaE-8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Piso"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble1"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</viviendas:altura>
+        <viviendas:distrito_ciudad>EIXAMPLE</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13400</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">233</precio_mensual>
+        <soleado>TARDE</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaE-9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaE-9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Duplex"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</viviendas:altura>
+        <viviendas:distrito_ciudad>EIXAMPLE</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14800</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">765</precio_mensual>
+        <soleado>TARDE</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaG-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaG-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Unifamiliar"/>
+        <viviendas:distrito_ciudad>GRACIA</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_ascensor>
+        <has_garaje rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_garaje>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_piscina>
+        <has_sotano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_sotano>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11500</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">700</precio_mensual>
+        <soleado>MANYANA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaG-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaG-2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Piso"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</viviendas:altura>
+        <viviendas:distrito_ciudad>GRACIA</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11000</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</precio_mensual>
+        <soleado>TARDE</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaG-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaG-3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Piso"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble1"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</viviendas:altura>
+        <viviendas:distrito_ciudad>GRACIA</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11000</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">540</precio_mensual>
+        <soleado>TARDE</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaG-4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaG-4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Duplex"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</viviendas:altura>
+        <viviendas:distrito_ciudad>GRACIA</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11700</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">460</precio_mensual>
+        <soleado>DIA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaG-5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaG-5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Duplex"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</viviendas:altura>
+        <viviendas:distrito_ciudad>GRACIA</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12500</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">670</precio_mensual>
+        <soleado>MANYANA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaG-6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaG-6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Piso"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble2"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</viviendas:altura>
+        <viviendas:distrito_ciudad>GRACIA</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9500</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">340</precio_mensual>
+        <soleado>MANYANA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaG-7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaG-7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Piso"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</viviendas:altura>
+        <viviendas:distrito_ciudad>GRACIA</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12600</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">768</precio_mensual>
+        <soleado>DIA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaHG-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaHG-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Unifamiliar"/>
+        <viviendas:distrito_ciudad>HORTA-GUINARDO</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">57</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>BUTANO</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_ascensor>
+        <has_garaje rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_garaje>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_piscina>
+        <has_sotano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_sotano>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16000</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">567</precio_mensual>
+        <soleado>DIA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaHG-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaHG-2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Duplex"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</viviendas:altura>
+        <viviendas:distrito_ciudad>HORTA-GUINARDO</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15500</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">654</precio_mensual>
+        <soleado>TARDE</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaHG-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaHG-3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Unifamiliar"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble2"/>
+        <viviendas:distrito_ciudad>HORTA-GUINARDO</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_ascensor>
+        <has_garaje rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_garaje>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_sotano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_sotano>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11500</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16500</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">253</precio_mensual>
+        <soleado>TARDE</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaHG-4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaHG-4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Unifamiliar"/>
+        <viviendas:distrito_ciudad>HORTA-GUINARDO</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_ascensor>
+        <has_garaje rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_garaje>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_sotano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_sotano>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11600</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17000</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">123</precio_mensual>
+        <soleado>MANYANA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaHG-5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaHG-5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Unifamiliar"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble1"/>
+        <viviendas:distrito_ciudad>HORTA-GUINARDO</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</electrodomesticos>
+        <gas>BUTANO</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_ascensor>
+        <has_garaje rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_garaje>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_piscina>
+        <has_sotano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_sotano>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17500</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">485</precio_mensual>
+        <soleado>TARDE</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaHG-6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaHG-6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Piso"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</viviendas:altura>
+        <viviendas:distrito_ciudad>HORTA-GUINARDO</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16700</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">677</precio_mensual>
+        <soleado>DIA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaHG-7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaHG-7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Piso"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble2"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</viviendas:altura>
+        <viviendas:distrito_ciudad>HORTA-GUINARDO</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10200</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17400</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">342</precio_mensual>
+        <soleado>TARDE</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaHG-8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaHG-8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Duplex"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</viviendas:altura>
+        <viviendas:direccion>HORTA-GUINARDO</viviendas:direccion>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9700</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15600</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">576</precio_mensual>
+        <soleado>DIA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaLC-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaLC-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Unifamiliar"/>
+        <viviendas:distrito_ciudad>LES-CORTS</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_ascensor>
+        <has_garaje rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_garaje>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_piscina>
+        <has_sotano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_sotano>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7000</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">440</precio_mensual>
+        <soleado>MANYANA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaLC-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaLC-2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Unifamiliar"/>
+        <viviendas:distrito_ciudad>LES-CORTS</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_ascensor>
+        <has_garaje rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_garaje>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_piscina>
+        <has_sotano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_sotano>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8500</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8500</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500</precio_mensual>
+        <soleado>TARDE</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaLC-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaLC-3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Duplex"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble2"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</viviendas:altura>
+        <viviendas:distrito_ciudad>LES-CORTS</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7500</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</precio_mensual>
+        <soleado>TARDE</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaLC-4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaLC-4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Duplex"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</viviendas:altura>
+        <viviendas:distrito_ciudad>LES-CORTS</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>BUTANO</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7500</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</precio_mensual>
+        <soleado>TARDE</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaLC-5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaLC-5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Piso"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</viviendas:altura>
+        <viviendas:distrito_ciudad>LES-CORTS</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8600</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">570</precio_mensual>
+        <soleado>DIA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaLC-6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaLC-6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Piso"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble1"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</viviendas:altura>
+        <viviendas:distrito_ciudad>LES-CORTS</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7600</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6500</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">570</precio_mensual>
+        <soleado>DIA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaSA-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaSA-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Piso"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</viviendas:altura>
+        <viviendas:distrito_ciudad>SANT-ANDREU</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19300</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">234</precio_mensual>
+        <soleado>DIA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaSA-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaSA-2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Piso"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</viviendas:altura>
+        <viviendas:distrito_ciudad>SANT-ANDREU</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9700</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21000</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">234</precio_mensual>
+        <soleado>DIA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaSA-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaSA-3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Duplex"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble1"/>
+        <viviendas:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</viviendas:altura>
+        <viviendas:distrito_ciudad>SANT-ANDREU</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20000</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">286</precio_mensual>
+        <soleado>MANYANA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaSA-4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaSA-4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Duplex"/>
+        <viviendas:distrito_ciudad>SANT-ANDREU</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>BUTANO</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_parking rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_parking>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11700</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21000</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">124</precio_mensual>
+        <soleado>TARDE</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaSA-5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaSA-5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Unifamiliar"/>
+        <viviendas:distrito_ciudad>SANT-ANDREU</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_garaje rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_garaje>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_piscina>
+        <has_sotano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_sotano>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11700</longitud_x>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21000</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">879</precio_mensual>
+        <soleado>DIA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaSSG-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaSSG-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Unifamiliar"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble2"/>
+        <viviendas:distrito_ciudad>SARRIA-SANT-GERVASI</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_ascensor>
+        <has_garaje rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_garaje>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_piscina>
+        <has_sotano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_sotano>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12700</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6700</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">820</precio_mensual>
+        <soleado>DIA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaSSG-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaSSG-2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Unifamiliar"/>
+        <viviendas:distrito_ciudad>SARRIA-SANT-GERVASI</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">52</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>BUTANO</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_garaje rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_garaje>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_sotano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_sotano>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11700</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7000</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">685</precio_mensual>
+        <soleado>MANYANA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaSSG-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaSSG-3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Unifamiliar"/>
+        <viviendas:tiene_dormitorio rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#DormitorioDoble2"/>
+        <viviendas:distrito_ciudad>SARRIA-SANT-GERVASI</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>BUTANO</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_ascensor>
+        <has_garaje rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_garaje>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_sotano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_sotano>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12500</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</precio_mensual>
+        <soleado>MANYANA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaSSG-4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaSSG-4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Unifamiliar"/>
+        <viviendas:distrito_ciudad>SARRIA-SANT-GERVASI</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_ascensor>
+        <has_garaje rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_garaje>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_piscina>
+        <has_sotano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_sotano>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11500</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7700</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">810</precio_mensual>
+        <soleado>TARDE</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaSSG-5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaSSG-5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Unifamiliar"/>
+        <viviendas:distrito_ciudad>SARRIA-SANT-GERVASI</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_ascensor>
+        <has_garaje rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_garaje>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_piscina>
+        <has_sotano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_sotano>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6500</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">984</precio_mensual>
+        <soleado>DIA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaSSG-6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#ViviendaSSG-6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Unifamiliar"/>
+        <viviendas:distrito_ciudad>SARRIA-SANT-GERVASI</viviendas:distrito_ciudad>
+        <viviendas:has_aire rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_aire>
+        <viviendas:has_balcon rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_balcon>
+        <viviendas:has_calefaccion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_calefaccion>
+        <viviendas:has_terraza rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</viviendas:has_terraza>
+        <viviendas:m2_habitable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</viviendas:m2_habitable>
+        <electrodomesticos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</electrodomesticos>
+        <gas>NATURAL</gas>
+        <has_ascensor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_ascensor>
+        <has_garaje rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_garaje>
+        <has_piscina rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_piscina>
+        <has_sotano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</has_sotano>
+        <has_vistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_vistas>
+        <latitud_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000</latitud_y>
+        <longitud_x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7000</longitud_x>
+        <mascotas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mascotas>
+        <muebles rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</muebles>
+        <precio_mensual rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">900</precio_mensual>
+        <soleado>DIA</soleado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Comercial"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Educacion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Ocio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Oficina"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Sanidad"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#Transporte"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/10/viviendas#ZonaVerde"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shuanglong/ontologies/2021/11/practica2#Industrial"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

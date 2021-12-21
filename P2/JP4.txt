@@ -1,0 +1,226 @@
+=============================================
+=   Sistema de recomendacion de viviendas   =
+=============================================
+- Quiere ejecutar un juego de pruebas? [s | n] n
+Por favor, responda a las siguientes preguntas:
+- Que edad tiene? 40
+- Cual es su estado civil? [(p)areja | (s)oltero | (d)ivorciado | con (h)ijos] s h
+- Esta a cargo de personas mayores? [s | n] n
+- Tiene coche? [s | n] s
+- Trabaja en la ciudad de Barcelona? [s | n] s
+Ha indicado que trabaja en Barcelona.
+Sabiendo que los distritos en Barcelona son:
+[a] Ciutat Vella   [b] Eixample        [c] Sants-Montjuic   [d] Les Corts    [e] Sarria-Sant Gervasi
+[f] Gracia         [g] Horta-Guinardo  [h] Nou Barris        [i] Sant Andreu  [j] Sant Marti
+- En que distrito trabaja? i
+A continuacion se le haran preguntas sobre las diferentes caracteristicas de las viviendas
+Para cada caracteristica, se le preguntara tambien su grado de obligatoriedad, los cuales pueden ser:
+[(o)bligatorio | (p)referente | (i)ndiferente]
+- Que tipo de vivienda esta buscando? [(u)nifamiliar | (p)iso | (d)uplex] u
+- Cual es su grado de obligatoriedad? o
+- Cual es el precio mensual minimo que esta dispuesto/a a pagar? 100
+- Cual es su grado de obligatoriedad? p
+- Cual es el precio mensual maximo que esta dispuesto/a a pagar? 700
+- Cual es su grado de obligatoriedad? o
+- Cuantos metros cuadrados quiere que tenga aproximadamente como minimo? 50
+- Cual es su grado de obligatoriedad? o
+- Cuantos dormitorios simples quiere como minimo? 2
+- Cual es su grado de obligatoriedad? p
+- De estos dormitorios, cuantos quiere con armarios empotrados como minimo? 1
+- Cual es su grado de obligatoriedad? p
+- Cuantos dormitorios dobles quiere como minimo? 1
+- Cual es su grado de obligatoriedad? o
+- De estos dormitorios, cuantos quiere con armarios empotrados como minimo? 1
+- Cual es su grado de obligatoriedad? p
+- Cuantos banyos quiere como minimo? 2
+- Cual es su grado de obligatoriedad? o
+- De estos banyos, cuantos quiere con banyera como minimo? 1
+- Cual es su grado de obligatoriedad? p
+- De estos banyos, cuantos quiere con ducha como minimo? 1
+- Cual es su grado de obligatoriedad? p
+- Quiere una vivienda con balcones? [s | n] n
+- Cual es su grado de obligatoriedad? p
+- Quiere una vivienda con terrazas? [s | n] s
+- Cual es su grado de obligatoriedad? p
+- Quiere una vivienda unifamiliar con garaje? [s | n] s
+- Cual es su grado de obligatoriedad? o
+- Quiere una vivienda unifamiliar con sotano? [s | n] s
+- Cual es su grado de obligatoriedad? p
+- Quiere una vivienda con ascensor? [s | n] n
+- Cual es su grado de obligatoriedad? i
+- Quiere una vivienda donde se permitan mascotas? [s | n] s
+- Cual es su grado de obligatoriedad? p
+- Quiere una vivienda con gas natural o butano? [(n)atural | (b)utano] n
+- Cual es su grado de obligatoriedad? p
+- Quiere una vivienda que disponga de aire acondicionado? [s | n] s
+- Cual es su grado de obligatoriedad? p
+- Quiere una vivienda que disponga de calefaccion? [s | n] s
+- Cual es su grado de obligatoriedad? p
+- Quiere una vivienda amueblada? [s | n] s
+- Cual es su grado de obligatoriedad? p
+- Quiere una vivienda con electrodomesticos? [s | n] s
+- Cual es su grado de obligatoriedad? p
+- Quiere una vivienda con piscina? [s | n] s
+- Cual es su grado de obligatoriedad? p
+- Quiere una vivienda soleada por la manyana, por la tarde, o todo el dia? [(m)anyana | (t)arde | (d)ia] m
+- Cual es su grado de obligatoriedad? p
+- Quiere una vivienda con buenas vistas? [s | n] s
+- Cual es su grado de obligatoriedad? p
+Los servicios que hay disponibles son: (i)ndustrial (o)cio o(f)icina (e)ducacion (z)onaverde (s)anidad (t)ransporte (c)omercial
+- Que servicios prefiere tener cerca? e o
+- Cual es su grado de obligatoriedad? o
+- Que servicios prefiere tener lejos? 
+- Cual es su grado de obligatoriedad? i
+
+=============================================
+=        VIVIENDAS MUY RECOMENDABLES        =
+=============================================
+[ViviendaG-1]
+Lista de servicios cercanos: 
+- [ServicioGracia5] (Comercial)
+- [ServicioGracia2] (Educacion)
+- [ServicioGracia1] (Ocio)
+Detalles de la recomendacion:
+[+] La superficie de la vivienda es al menos un 25% superior a la solicitada
+Puntuacion: 28
+[+5 puntos] El cliente tiene coche y cumple la obligatoriedad de que tenga garaje
+[+5 puntos] Es soltero y ademas cumple la obligatoriedad de tener cerca un servicio de ocio
+[+5 puntos] Tiene hijos y ademas cumple la obligatoriedad de tener cerca un servicio de educacion
+[+] El precio mensual de la vivienda es igual o superior al precio minimo solicitado
+[+] El numero de dormitorios simples de la vivienda es igual o superior al solicitado
+[+] El numero de dormitorios simples con armarios empotrados de la vivienda es igual o superior al solicitado
+[+] El numero de dormitorios dobles con armarios empotrados de la vivienda es igual o superior al solicitado
+[+] El numero de banyeras de la vivienda es igual o superior al solicitado
+[+] El numero de duchas de la vivienda es igual o superior al solicitado
+[+] La permision de mascotas coincide con la solicitada
+[+] El tipo de gas coincide con el solicitado
+[+] La disponibilidad de muebles coincide con la solicitada
+[+] La disponibilidad de electrodomesticos coincide con la solicitada
+[+] La iluminacion solar de la vivienda coincide con la solicitada
+[+] La disponibilidad de buenas vistas coincide con la solicitada
+[+] La disponibilidad de piscina coincide con la solicitada
+
+
+=============================================
+=     VIVIENDAS PARCIALMENTE ADECUADAS      =
+=============================================
+[ViviendaLC-1]
+Lista de servicios cercanos: 
+- [ServicioLesCorts8] (Comercial)
+- [ServicioLesCorts1] (Educacion)
+- [ServicioLesCorts10] (Ocio)
+Detalles de la recomendacion:
+[-] La superficie de la vivienda es inferior a la solicitada
+[-] El numero de banyos de la vivienda es inferior al solicitado
+Puntuacion: 29
+[+5 puntos] El cliente tiene coche y cumple la obligatoriedad de que tenga garaje
+[+5 puntos] Es soltero y ademas cumple la obligatoriedad de tener cerca un servicio de ocio
+[+5 puntos] Tiene hijos y ademas cumple la obligatoriedad de tener cerca un servicio de educacion
+[+] El precio mensual de la vivienda es igual o superior al precio minimo solicitado
+[+] El numero de dormitorios simples de la vivienda es igual o superior al solicitado
+[+] El numero de dormitorios simples con armarios empotrados de la vivienda es igual o superior al solicitado
+[+] El numero de dormitorios dobles con armarios empotrados de la vivienda es igual o superior al solicitado
+[+] El numero de duchas de la vivienda es igual o superior al solicitado
+[+] La disponibilidad de terrazas coincide con la solicitada
+[+] La permision de mascotas coincide con la solicitada
+[+] La disponibilidad de aire acondicionado coincide con la solicitada
+[+] La disponibilidad de calefaccion coincide con la solicitada
+[+] El tipo de gas coincide con el solicitado
+[+] La disponibilidad de electrodomesticos coincide con la solicitada
+[+] La iluminacion solar de la vivienda coincide con la solicitada
+[+] La disponibilidad de buenas vistas coincide con la solicitada
+[+] La disponibilidad de piscina coincide con la solicitada
+
+[ViviendaHG-4]
+Lista de servicios cercanos: 
+- [ServicioHortaGuinardo5] (Comercial)
+- [ServicioHortaGuinardo6] (Comercial)
+- [ServicioHortaGuinardo3] (Ocio)
+- [ServicioHortaGuinardo2] (ZonaVerde)
+Detalles de la recomendacion:
+[-] Algun servicio cercano solicitado no se encuentra en las cercanias de la vivienda
+Puntuacion: 25
+[+5 puntos] El cliente tiene coche y cumple la obligatoriedad de que tenga garaje
+[+5 puntos] Es soltero y ademas cumple la obligatoriedad de tener cerca un servicio de ocio
+[+] El precio mensual de la vivienda es igual o superior al precio minimo solicitado
+[+] El numero de dormitorios simples de la vivienda es igual o superior al solicitado
+[+] El numero de dormitorios simples con armarios empotrados de la vivienda es igual o superior al solicitado
+[+] El numero de dormitorios dobles con armarios empotrados de la vivienda es igual o superior al solicitado
+[+] El numero de banyeras de la vivienda es igual o superior al solicitado
+[+] El numero de duchas de la vivienda es igual o superior al solicitado
+[+] La disponibilidad de balcones coincide con la solicitada
+[+] La disponibilidad de terrazas coincide con la solicitada
+[+] La permision de mascotas coincide con la solicitada
+[+] La disponibilidad de aire acondicionado coincide con la solicitada
+[+] La disponibilidad de calefaccion coincide con la solicitada
+[+] El tipo de gas coincide con el solicitado
+[+] La disponibilidad de electrodomesticos coincide con la solicitada
+[+] La iluminacion solar de la vivienda coincide con la solicitada
+[+] La disponibilidad de buenas vistas coincide con la solicitada
+
+[ViviendaSA-5]
+Detalles de la recomendacion:
+[-] El precio mensual de la vivienda es superior al precio maximo solicitado
+[-] Algun servicio cercano solicitado no se encuentra en las cercanias de la vivienda
+Puntuacion: 24
+[+5 puntos] El cliente tiene coche y cumple la obligatoriedad de que tenga garaje
+[+5 puntos] La vivienda esta en el mismo distrito donde trabaja
+[+] El precio mensual de la vivienda es igual o superior al precio minimo solicitado
+[+] El numero de dormitorios simples de la vivienda es igual o superior al solicitado
+[+] El numero de dormitorios simples con armarios empotrados de la vivienda es igual o superior al solicitado
+[+] El numero de dormitorios dobles con armarios empotrados de la vivienda es igual o superior al solicitado
+[+] El numero de duchas de la vivienda es igual o superior al solicitado
+[+] La disponibilidad de terrazas coincide con la solicitada
+[+] La permision de mascotas coincide con la solicitada
+[+] La disponibilidad de aire acondicionado coincide con la solicitada
+[+] La disponibilidad de calefaccion coincide con la solicitada
+[+] El tipo de gas coincide con el solicitado
+[+] La disponibilidad de electrodomesticos coincide con la solicitada
+[+] La disponibilidad de buenas vistas coincide con la solicitada
+[+] La disponibilidad de piscina coincide con la solicitada
+[+] La disponibilidad de sotano coincide con la solicitada
+
+[ViviendaLC-2]
+Lista de servicios cercanos: 
+- [ServicioLesCorts2] (Comercial)
+- [ServicioLesCorts1] (Educacion)
+- [ServicioLesCorts5] (Sanidad)
+Detalles de la recomendacion:
+[-] El numero de banyos de la vivienda es inferior al solicitado
+[-] Algun servicio cercano solicitado no se encuentra en las cercanias de la vivienda
+Puntuacion: 20
+[+5 puntos] El cliente tiene coche y cumple la obligatoriedad de que tenga garaje
+[+5 puntos] Tiene hijos y ademas cumple la obligatoriedad de tener cerca un servicio de educacion
+[+] El precio mensual de la vivienda es igual o superior al precio minimo solicitado
+[+] El numero de dormitorios simples de la vivienda es igual o superior al solicitado
+[+] El numero de dormitorios simples con armarios empotrados de la vivienda es igual o superior al solicitado
+[+] El numero de dormitorios dobles con armarios empotrados de la vivienda es igual o superior al solicitado
+[+] El numero de duchas de la vivienda es igual o superior al solicitado
+[+] La disponibilidad de aire acondicionado coincide con la solicitada
+[+] La disponibilidad de calefaccion coincide con la solicitada
+[+] El tipo de gas coincide con el solicitado
+[+] La disponibilidad de buenas vistas coincide con la solicitada
+[+] La disponibilidad de piscina coincide con la solicitada
+
+[ViviendaSSG-5]
+Lista de servicios cercanos: 
+- [ServicioSarriaSantGervasi3] (Transporte)
+- [ServicioSarriaSantGervasi4] (Transporte)
+Detalles de la recomendacion:
+[-] El precio mensual de la vivienda es superior al precio maximo solicitado
+[-] Algun servicio cercano solicitado no se encuentra en las cercanias de la vivienda
+Puntuacion: 18
+[+5 puntos] El cliente tiene coche y cumple la obligatoriedad de que tenga garaje
+[+] El precio mensual de la vivienda es igual o superior al precio minimo solicitado
+[+] El numero de dormitorios simples con armarios empotrados de la vivienda es igual o superior al solicitado
+[+] El numero de dormitorios dobles con armarios empotrados de la vivienda es igual o superior al solicitado
+[+] El numero de duchas de la vivienda es igual o superior al solicitado
+[+] La disponibilidad de balcones coincide con la solicitada
+[+] La disponibilidad de terrazas coincide con la solicitada
+[+] La permision de mascotas coincide con la solicitada
+[+] La disponibilidad de calefaccion coincide con la solicitada
+[+] El tipo de gas coincide con el solicitado
+[+] La disponibilidad de muebles coincide con la solicitada
+[+] La disponibilidad de electrodomesticos coincide con la solicitada
+[+] La disponibilidad de buenas vistas coincide con la solicitada
+[+] La disponibilidad de piscina coincide con la solicitada

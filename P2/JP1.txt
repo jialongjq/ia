@@ -1,0 +1,82 @@
+=============================================
+=   Sistema de recomendacion de viviendas   =
+=============================================
+Por favor, responda a las siguientes preguntas:
+- Que edad tiene? 20
+- Cual es su estado civil? [(p)areja | (s)oltero | (d)ivorciado | con (h)ijos] s
+- Esta a cargo de personas mayores? [s | n] n
+- Tiene coche? [s | n] n
+- Trabaja en la ciudad de Barcelona? [s | n] s
+Ha indicado que trabaja en Barcelona.
+Sabiendo que los distritos en Barcelona son:
+[a] Ciutat Vella   [b] Eixample        [c] Sants-Montjuic   [d] Les Corts    [e] Sarria-Sant Gervasi
+[f] Gracia         [g] Horta-Guinardo  [h] Nou Barris        [i] Sant Andreu  [j] Sant Marti
+- En que distrito trabaja? a
+A continuacion se le haran preguntas sobre las diferentes caracteristicas de las viviendas
+Para cada caracteristica, se le preguntara tambien su grado de obligatoriedad, los cuales pueden ser:
+[(o)bligatorio | (p)referente | (i)ndiferente]
+- Que tipo de vivienda esta buscando? [(u)nifamiliar | (p)iso | (d)uplex] p
+- Cual es su grado de obligatoriedad? o
+- Cual es el precio mensual minimo que esta dispuesto/a a pagar? 450
+- Cual es su grado de obligatoriedad? o
+- Cual es el precio mensual maximo que esta dispuesto/a a pagar? 450
+- Cual es su grado de obligatoriedad? o
+- Cuantos metros cuadrados quiere que tenga aproximadamente como minimo? 51
+- Cual es su grado de obligatoriedad? o
+- Cuantos dormitorios simples quiere como minimo? 2
+- Cual es su grado de obligatoriedad? o
+- De estos dormitorios, cuantos quiere con armarios empotrados como minimo? 1
+- Cual es su grado de obligatoriedad? o
+- Cuantos dormitorios dobles quiere como minimo? 1
+- Cual es su grado de obligatoriedad? o
+- De estos dormitorios, cuantos quiere con armarios empotrados como minimo? 1
+- Cual es su grado de obligatoriedad? o
+- Cuantos banyos quiere como minimo? 1
+- Cual es su grado de obligatoriedad? o
+- De estos banyos, cuantos quiere con banyera como minimo? 1
+- Cual es su grado de obligatoriedad? o
+- De estos banyos, cuantos quiere con ducha como minimo? 1
+- Cual es su grado de obligatoriedad? o
+- Quiere una vivienda con balcones? [s | n] n
+- Cual es su grado de obligatoriedad? o
+- Quiere una vivienda con terrazas? [s | n] n
+- Cual es su grado de obligatoriedad? o
+- Quiere una vivienda plurifamiliar con parking? [s | n] s
+- Cual es su grado de obligatoriedad? o
+- Quiere una vivienda con ascensor? [s | n] s
+- Cual es su grado de obligatoriedad? o
+- Quiere una vivienda donde se permitan mascotas? [s | n] s
+- Cual es su grado de obligatoriedad? o
+- Quiere una vivienda con gas natural o butano? [(n)atural | (b)utano] b
+- Cual es su grado de obligatoriedad? o
+- Quiere una vivienda que disponga de aire acondicionado? [s | n] n
+- Cual es su grado de obligatoriedad? o
+- Quiere una vivienda que disponga de calefaccion? [s | n] s
+- Cual es su grado de obligatoriedad? o
+- Quiere una vivienda amueblada? [s | n] s
+- Cual es su grado de obligatoriedad? o
+- Quiere una vivienda con electrodomesticos? [s | n] n
+- Cual es su grado de obligatoriedad? o
+- Quiere una vivienda con piscina comunitaria? [s | n] s
+- Cual es su grado de obligatoriedad? o
+- Quiere una vivienda soleada por la manyana, por la tarde, o todo el dia? [(m)anyana | (t)arde | (d)ia] d
+- Cual es su grado de obligatoriedad? o
+- Quiere una vivienda con buenas vistas? [s | n] s
+- Cual es su grado de obligatoriedad? o
+Los servicios que hay disponibles son: (i)ndustrial (o)cio o(f)icina (e)ducacion (z)onaverde (s)anidad (t)ransporte (c)omercial
+- Que servicios prefiere tener cerca? c t z
+- Cual es su grado de obligatoriedad? o
+- Que servicios prefiere tener lejos? i o f e s
+- Cual es su grado de obligatoriedad? o
+
+=============================================
+=            VIVIENDAS ADECUADAS            =
+=============================================
+[ViviendaCV-1]
+Lista de servicios cercanos: 
+- [ServicioCiutatVella1] (Comercial)
+- [ServicioEixample10] (Transporte)
+- [ServicioCiutatVella3] (ZonaVerde)
+Puntuacion: 10
+[+5 puntos] No tiene coche y cumple la obligatoriedad de tener cerca a un servicio de transporte
+[+5 puntos] La vivienda esta en el mismo distrito donde trabaja
