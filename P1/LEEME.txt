@@ -1,0 +1,6 @@
+Para ejecutar la practica:
+- Descomprimir el archivo .zip
+- Desde el directorio de la carpeta 'ia-gasolina' extraída, ejecutar el comando desde la consola:
+	java -jar ia-gasolina.jar
+Los códigos fuente están en la carpeta 'src'.
+NOTA: es necesario tener la versión jdk 11 de Java.
